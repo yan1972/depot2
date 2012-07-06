@@ -1,5 +1,5 @@
 Depot::Application.routes.draw do
-  get 'admin' => 'admin/index'
+  get 'admin' => 'admin#index'
   
   controller :sessions do
     get 'login' => :new
@@ -13,7 +13,7 @@ Depot::Application.routes.draw do
 #
 #  get "sessions/create"
 #
-#  get "sessions/destory"
+#  get "sessions/destroy"
 
   resources :users
 
